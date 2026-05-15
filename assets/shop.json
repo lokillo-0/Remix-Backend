@@ -1,0 +1,110 @@
+[
+  {
+    "id": "Character_LemonCartGranite",
+    "name": "Snoop Dogg",
+    "price": 1800,
+    "section": "SNOOP DOGG | D-O-Double G"
+  },
+  {
+    "id": "EID_LemonCart",
+    "name": "Snoop Dogg",
+    "price": 500,
+    "section": "SNOOP DOGG | D-O-Double G"
+  },
+  {
+    "id": "Backpack_LemonCartGranite",
+    "name": "Dogg House",
+    "price": 400,
+    "section": "SNOOP DOGG | D-O-Double G"
+  },
+  {
+    "id": "Glider_LemonCartGranite",
+    "name": "Lowrider Bike",
+    "price": 1200,
+    "section": "SNOOP DOGG | D-O-Double G"
+  },
+  {
+    "id": "Pickaxe_LemonCartGranite",
+    "name": "Axizzle",
+    "price": 800,
+    "section": "SNOOP DOGG | D-O-Double G"
+  },
+  
+
+  {
+    "id": "Character_BerryTartBrunt",
+    "name": "Rap Princess Ice Spice",
+    "price": 1500,
+    "section": "ICE SPICE | GRAHHH"
+  },
+  {
+    "id": "Character_BerryTartRiver",
+    "name": "Ice Spice",
+    "price": 1500,
+    "section": "ICE SPICE | GRAHHH"
+  },
+  {
+    "id": "EID_BerryTart",
+    "name": "In Ha Mood",
+    "price": 500,
+    "section": "ICE SPICE | GRAHHH"
+  },
+  {
+    "id": "EID_BerryTartRiver",
+    "name": "Oh Shhh",
+    "price": 500,
+    "section": "ICE SPICE | GRAHHH"
+  },
+
+
+  {
+    "id": "Character_BraveBuildSuper",
+    "name": "Rap Boy",
+    "price": 1500,
+    "section": "EMINEM | BACK AGAIN"
+  },
+  {
+    "id": "EID_HeavyRoarDance",
+    "name": "Real Slim Shady",
+    "price": 500,
+    "section": "EMINEM | BACK AGAIN"
+  },
+  {
+    "id": "Pickaxe_HeavyRoar",
+    "name": "Shady Double Saw",
+    "price": 800,
+    "section": "EMINEM | BACK AGAIN"
+  },
+  {
+    "id": "Pickaxe_BraveBuild",
+    "name": "Axe 'Bout Me",
+    "price": 500,
+    "section": "EMINEM | BACK AGAIN"
+  },
+
+
+  {
+    "id": "Character_DyedDuelist",
+    "name": "Aniyah",
+    "price": 1500,
+    "section": "FADELESSS STREAMS | LOCKER BUNDLE"
+  },
+  {
+    "id": "BID_256_ShatterFly",
+    "name": "Shattered Wing",
+    "price": 1200,
+    "section": "FADELESSS STREAMS | LOCKER BUNDLE"
+  },
+  {
+    "id": "Pickaxe_ID_014_WinterCamo",
+    "name": "ICE BREAKER",
+    "price": 500,
+    "section": "FADELESSS STREAMS | LOCKER BUNDLE"
+  },
+  {
+    "id": "Glider_ID_349_GimmickMale_MC92O",
+    "name": "Suit Surfer",
+    "price": 800,
+    "section": "FADELESSS STREAMS | LOCKER BUNDLE"
+  }
+]

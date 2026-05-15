@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item Shop – Remix</title>
+  <link rel="icon" type="image/png" href="/admin/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: #0d0b1a; color: #fff; min-height: 100vh; }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 70%, rgba(76,29,149,.45) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 85% 15%, rgba(109,40,217,.28) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 110%, rgba(55,20,120,.35) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(13,11,26,0.82);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 0 28px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-left { display: flex; align-items: center; gap: 14px; }
+    .remix-logo { height: 28px; width: auto; }
+    .header-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.1); }
+    header h1 { font-size: 0.72rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.35); }
+
+    .header-right { display: flex; align-items: center; gap: 10px; }
+    .user-name { font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.8); }
+    .header-sep { width: 1px; height: 18px; background: rgba(255,255,255,0.07); margin: 0 2px; }
+    #user-vbucks {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 5px 12px; border-radius: 20px;
+    }
+    #user-vbucks img { width: 18px; height: 18px; }
+    #user-vbucks span { font-size: 0.88rem; font-weight: 700; color: #f0d060; }
+
+    .btn-login {
+      display: flex; align-items: center; gap: 8px;
+      background: #5865F2; border: none; color: #fff;
+      padding: 7px 16px; border-radius: 8px; cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem; font-weight: 600;
+      transition: opacity 0.15s;
+      letter-spacing: 0.01em;
+    }
+    .btn-login:hover { opacity: 0.85; }
+    .btn-login:disabled { opacity: 0.5; cursor: default; }
+
+    .btn-header {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: rgba(255,255,255,0.55);
+      padding: 6px 14px; border-radius: 6px; cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.76rem; font-weight: 500;
+      transition: background 0.15s;
+    }
+    .btn-header:hover { background: rgba(255,255,255,0.09); }
+    .btn-header.logout { background: transparent; border-color: rgba(255,255,255,0.05); color: rgba(255,255,255,0.25); }
+    .btn-header.logout:hover { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.45); }
+
+    main {
+      position: relative;
+      z-index: 1;
+      padding: 32px 28px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .section { margin-bottom: 40px; }
+    .section-title {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+      margin-bottom: 12px;
+    }
+
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+
+    .item-card {
+      position: relative; border-radius: 10px; overflow: hidden;
+      cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
+      aspect-ratio: 3/4; display: flex; flex-direction: column;
+    }
+    .item-card:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(0,0,0,0.55); }
+    .item-card.tile-large { grid-column: span 2; grid-row: span 2; }
+
+    .item-image { flex: 1; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .item-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .item-image .placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; opacity: 0.25; }
+    .item-image .placeholder svg { width: 40px; height: 40px; }
+    .item-image .placeholder span { font-size: 0.55rem; letter-spacing: 2px; text-transform: uppercase; }
+
+    .item-banner { position: absolute; top: 8px; left: 0; background: #e74c3c; color: #fff; font-size: 0.57rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 0 4px 4px 0; }
+    .item-banner.new { background: #27ae60; }
+
+    .item-info { padding: 8px 10px 10px; background: rgba(0,0,0,0.72); }
+    .item-type { font-size: 0.57rem; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.3); margin-bottom: 2px; }
+    .item-name { font-size: 0.76rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #fff; margin-bottom: 6px; }
+    .item-price { display: flex; align-items: center; gap: 5px; }
+    .item-price img { width: 14px; height: 14px; }
+    .item-price span { font-size: 0.76rem; font-weight: 700; color: #f0d060; }
+    .item-owned-label { display: none; font-size: 0.57rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(39,174,96,0.8); margin-top: 4px; }
+    .item-card.is-owned .item-owned-label { display: block; }
+    .item-card.is-owned { opacity: 0.55; }
+    .item-card.is-owned .item-price { opacity: 0.3; }
+
+    .loading { text-align: center; padding: 80px; color: rgba(255,255,255,0.18); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; }
+
+    /* Modal */
+    .modal-bg {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 100; align-items: center; justify-content: center;
+    }
+    .modal-bg.open { display: flex; }
+    .modal {
+      background: rgba(16,13,30,0.92);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 32px;
+      width: 360px; max-width: 95vw;
+      backdrop-filter: blur(32px);
+      -webkit-backdrop-filter: blur(32px);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 32px 80px rgba(0,0,0,0.6);
+    }
+    .modal h2 { font-size: 0.95rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; color: rgba(255,255,255,0.85); }
+    .modal-actions { display: flex; gap: 10px; margin-top: 4px; }
+    .btn-primary {
+      flex: 1;
+      background: linear-gradient(135deg, #7c3aed, #6d28d9);
+      border: none; color: #fff;
+      padding: 10px; border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.86rem; font-weight: 600;
+      cursor: pointer; transition: opacity 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 4px 20px rgba(109,40,217,0.35);
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-primary:disabled { opacity: 0.4; cursor: default; }
+    .btn-cancel {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.09);
+      color: rgba(255,255,255,0.35);
+      padding: 10px 16px; border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.86rem; cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-cancel:hover { background: rgba(255,255,255,0.05); }
+    .modal-error { color: #e74c3c; font-size: 0.75rem; margin-top: 8px; min-height: 18px; }
+
+    /* Buy confirm modal */
+    #buy-modal .modal { padding: 0; overflow: hidden; width: 320px; }
+    .buy-hero { position: relative; height: 190px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .buy-hero img { height: 170px; width: 170px; object-fit: cover; }
+    .buy-body { padding: 18px 20px 22px; }
+    .buy-item-name { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .buy-item-type { font-size: 0.6rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 16px; }
+    .buy-price-row {
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 10px 14px; margin-bottom: 14px;
+    }
+    .buy-price-left { display: flex; align-items: center; gap: 8px; }
+    .buy-price-left img { width: 22px; height: 22px; }
+    .buy-price-left span { font-size: 1.2rem; font-weight: 800; color: #f0d060; }
+    .buy-balance-col { text-align: right; }
+    .buy-balance-label { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.22); margin-bottom: 3px; }
+    .buy-balance-val { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+    .buy-balance-val img { width: 14px; height: 14px; }
+    .buy-balance-val span { font-size: 0.85rem; font-weight: 700; color: #f0d060; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="/admin/logo.png" alt="Remix" class="remix-logo">
+    <div class="header-divider"></div>
+    <h1>Item Shop</h1>
+  </div>
+  <div class="header-right" id="header-right">
+    <button class="btn-login" id="login-btn" onclick="doLogin()">
+      <svg width="18" height="18" viewBox="0 0 71 55" fill="white"><path d="M60.1 4.9A58.6 58.6 0 0 0 45.5.4a41 41 0 0 0-1.8 3.7 54.2 54.2 0 0 0-16.3 0A38.2 38.2 0 0 0 25.6.4 58.4 58.4 0 0 0 11 5C1.6 19 -1 32.7.3 46.2a59 59 0 0 0 18 9.1 44.6 44.6 0 0 0 3.9-6.3 38.4 38.4 0 0 1-6.1-2.9l1.5-1.1a42 42 0 0 0 35.8 0l1.5 1.1a38.3 38.3 0 0 1-6.1 2.9 44.4 44.4 0 0 0 3.8 6.3 58.8 58.8 0 0 0 18-9.1C72 30.6 68.4 17 60.1 4.9ZM23.7 38a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 23.7 38Zm23.6 0a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 47.3 38Z"/></svg>
+      Login with Discord
+    </button>
+  </div>
+</header>
+
+<main id="shop-content">
+  <div class="loading">Loading shop...</div>
+</main>
+
+<!-- Buy confirm modal -->
+<div class="modal-bg" id="buy-modal">
+  <div class="modal">
+    <div class="buy-hero">
+      <img id="buy-img" src="" alt="">
+    </div>
+    <div class="buy-body">
+      <div class="buy-item-name" id="buy-name"></div>
+      <div class="buy-item-type" id="buy-type"></div>
+      <div class="buy-price-row">
+        <div class="buy-price-left">
+          <img src="/admin/vbucks.png" alt="V-Bucks">
+          <span id="buy-price"></span>
+        </div>
+        <div class="buy-balance-col">
+          <div class="buy-balance-label">Your Balance</div>
+          <div class="buy-balance-val">
+            <img src="/admin/vbucks.png" alt="">
+            <span id="buy-bal">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-error" id="buy-error"></div>
+      <div class="modal-actions">
+        <button class="btn-cancel" onclick="closeBuy()">Cancel</button>
+        <button class="btn-primary" id="buy-btn" onclick="doBuy()">Purchase</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const VBUCKS_ICON = '/admin/vbucks.png';
+const SESSION_KEY = 'remix_shop_session';
+
+const TYPE_ICONS_SVG = {
+  'Outfit':         `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>`,
+  'Back Bling':     `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.1 15.9 0 13.33 0c-1.33 0-2.6.53-3.53 1.47L8 3.27 6.2 1.47C5.27.53 4 0 2.67 0 1.1 0-.07 1.1 0 2.67c0 .45.11.89.18 1.33H0v18c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 0H9V4h6v3z"/></svg>`,
+  'Harvesting Tool':`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 2.1L13.4 4.2l2.1 2.1-1.2 1.2-2.1-2.1-2.8 2.8 2.1 2.1-1.2 1.2-2.1-2.1L3 16.5V21h4.5l10.5-10.5-2.1-2.1 1.2-1.2 2.1 2.1 2.8-2.8-2.1-2.1 1.2-1.2 2.1 2.1 1.4-1.4-7-7-1.1 1.2zM6.2 19H5v-1.2l8.3-8.3 1.2 1.2L6.2 19z"/></svg>`,
+  'Glider':         `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 3L3 10.5v1l7 2.8 2.8 7h1L21 3z"/></svg>`,
+  'Emote':          `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>`,
+  'Wrap':           `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 7h-3V4c0-1.1-.9-2-2-2H9C7.9 2 7 2.9 7 4v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-5 0H9V4h6v3z"/></svg>`,
+  'Music':          `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>`,
+  'Loading Screen': `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3C2 3 1 4 1 5v14c0 1.1.9 2 2 2h18c1 0 2-1 2-2V5c0-1-1-2-2-2zm0 16H3V5h18v14z"/></svg>`,
+  'Contrail':       `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>`,
+  'Item':           `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+};
+
+const TYPE_COLORS = {
+  'Outfit':'#5b6ee1','Back Bling':'#3d9970','Harvesting Tool':'#8e44ad',
+  'Glider':'#2980b9','Emote':'#d35400','Wrap':'#16a085','Music':'#c0392b',
+  'Loading Screen':'#7f8c8d','Contrail':'#1abc9c','Item':'#2c3e50',
+};
+
+let session = null;
+let ownedItems = new Set();
+let pendingItem = null;
+let authPopup = null;
+let pollInterval = null;
+
+// --- Session persistence ---
+function saveSession(s) {
+  try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch(e) {}
+}
+function loadSession() {
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    if (!raw) return null;
+    const s = JSON.parse(raw);
+    const payload = JSON.parse(atob(s.token.split('.')[1]));
+    const created = new Date(payload.creation_date).getTime();
+    const expiresIn = (payload.expires_in || 14400) * 1000;
+    if (Date.now() > created + expiresIn) {
+      localStorage.removeItem(SESSION_KEY);
+      return null;
+    }
+    return s;
+  } catch(e) { return null; }
+}
+function clearSession() {
+  localStorage.removeItem(SESSION_KEY);
+}
+
+// --- Item rendering ---
+function imageUrl(id) {
+  return `https://fortnite-api.com/images/cosmetics/br/${id}/icon.png`;
+}
+function cleanName(raw) {
+  let n = raw;
+  n = n.replace(/^CID_\d+_Athena_Commando_[MFmf]_/i,'');
+  n = n.replace(/^CID_NPC_Athena_Commando_[MFmf]_/i,'');
+  n = n.replace(/^CID_\d+_/i,'');
+  n = n.replace(/^Character_/i,'');
+  n = n.replace(/^EID_/i,'');
+  n = n.replace(/^BID_\d+_/i,'');
+  n = n.replace(/^Pickaxe_ID_\d+_/i,'');
+  n = n.replace(/^pickaxe_/i,'');
+  n = n.replace(/^Glider_ID_\d+_/i,'');
+  n = n.replace(/^Wrap_\d+_/i,'');
+  n = n.replace(/^MusicPack_\d+_/i,'');
+  n = n.replace(/^LSID_\d+_/i,'');
+  n = n.replace(/^Trails_ID_\d+_/i,'');
+  n = n.replace(/^AthenaDance_/i,'');
+  n = n.replace(/_/g,' ');
+  n = n.replace(/\b\w/g, c => c.toUpperCase());
+  return n.trim() || raw;
+}
+function formatName(name) {
+  return (name.includes('_') && !name.includes(' ')) ? cleanName(name) : name;
+}
+function renderBanner(banner) {
+  if (!banner) return '';
+  const cls = banner.toLowerCase().includes('new') ? 'new' : '';
+  return `<div class="item-banner ${cls}">${banner}</div>`;
+}
+function renderItem(item) {
+  const large = (item.tileSize === 'DoubleWide' || item.tileSize === 'Large') ? 'tile-large' : '';
+  const color = TYPE_COLORS[item.type] || '#2c3e50';
+  const imgSrc = item.imageId ? imageUrl(item.imageId) : '';
+  const displayName = formatName(item.name);
+  const dataAttrs = `data-offer="${item.offerId}" data-name="${displayName}" data-type="${item.type}" data-price="${item.price}" data-img="${imgSrc}" data-imageid="${item.imageId || ''}"`;
+  return `
+    <div class="item-card ${large}" onclick="onItemClick(this)" ${dataAttrs}>
+      <div class="item-image" style="background:linear-gradient(160deg,${color}44,#0d0b1a)">
+        ${imgSrc ? `<img src="${imgSrc}" alt="${displayName}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` : ''}
+        <div class="placeholder" style="${imgSrc ? 'display:none' : ''}">
+          ${TYPE_ICONS_SVG[item.type] || TYPE_ICONS_SVG['Item']}
+          <span>${item.type}</span>
+        </div>
+      </div>
+      ${renderBanner(item.banner)}
+      <div class="item-info">
+        <div class="item-type">${item.type}</div>
+        <div class="item-name" title="${displayName}">${displayName}</div>
+        <div class="item-price">
+          <img src="${VBUCKS_ICON}" alt="V-Bucks">
+          <span>${item.price.toLocaleString()}</span>
+        </div>
+        <div class="item-owned-label">OWNED</div>
+      </div>
+    </div>`;
+}
+function renderSection(s) {
+  if (!s.items || !s.items.length) return '';
+  return `<div class="section">
+    <div class="section-title">${s.name}</div>
+    <div class="items-grid">${s.items.map(renderItem).join('')}</div>
+  </div>`;
+}
+
+async function loadShop() {
+  try {
+    const res = await fetch('/fortnite/api/storefront/v2/catalog');
+    const data = await res.json();
+    const sectionMap = {}, sectionOrder = [];
+    const typeMap = {AthenaCharacter:'Outfit',AthenaBackpack:'Back Bling',AthenaPickaxe:'Harvesting Tool',AthenaGlider:'Glider',AthenaDance:'Emote',AthenaItemWrap:'Wrap',AthenaMusicPack:'Music',AthenaLoadingScreen:'Loading Screen',AthenaSkyDiveContrail:'Contrail'};
+    for (const sf of (data.storefronts || [])) {
+      for (const entry of (sf.catalogEntries || [])) {
+        const sectionId = (entry.meta && (entry.meta.SectionId || entry.meta.sectionId)) || (entry.categories && entry.categories[0]) || sf.name;
+        const sfNameMap = {BRDailyStorefront:"Daily",BRWeeklyStorefront:"Featured"};
+        const sectionId2 = sfNameMap[sectionId] || sectionId;
+        const price = (entry.prices || []).reduce((_, p) => p.finalPrice, 0);
+        if (price <= 0) continue;
+        const grants = entry.itemGrants || [];
+        if (!grants.length) continue;
+        const tplId = grants[0].templateId || '';
+        const colon = tplId.indexOf(':');
+        const prefix = colon >= 0 ? tplId.slice(0, colon) : '';
+        const rawId = colon >= 0 ? tplId.slice(colon + 1) : tplId;
+        const item = { name: rawId, type: typeMap[prefix] || 'Item', price, imageId: rawId, offerId: entry.offerId || '', tileSize: (entry.meta && entry.meta.tileSize) || 'Normal', banner: entry.bannerOverride || '' };
+        if (!sectionMap[sectionId2]) { sectionMap[sectionId2] = []; sectionOrder.push(sectionId2); }
+        sectionMap[sectionId2].push(item);
+      }
+    }
+    const sections = sectionOrder.map(n => ({ name: n, items: sectionMap[n] }));
+    const main = document.getElementById('shop-content');
+    main.innerHTML = sections.length ? sections.map(renderSection).join('') : '<div class="loading">Shop is currently empty.</div>';
+    const allIds = sections.flatMap(s => s.items.map(i => i.imageId)).filter(Boolean);
+    if (allIds.length) {
+      try {
+        const nr = await fetch('https://fortnite-api.com/v2/cosmetics/br/search/ids?language=en&' + allIds.map(id => 'id=' + id).join('&'));
+        const nd = await nr.json();
+        const nameMap = {};
+        for (const x of (nd.data || [])) nameMap[x.id.toLowerCase()] = x.name;
+        document.querySelectorAll('.item-card').forEach(card => {
+          const id = card.dataset.imageid;
+          if (id && nameMap[id.toLowerCase()]) {
+            card.dataset.name = nameMap[id.toLowerCase()];
+            const el = card.querySelector('.item-name');
+            if (el) el.textContent = nameMap[id.toLowerCase()];
+          }
+        });
+      } catch(e) {}
+    }
+    applyOwnedBadges();
+  } catch(e) {
+    document.getElementById('shop-content').innerHTML = `<div class="loading">Failed to load shop.</div>`;
+  }
+}
+
+// --- Ownership ---
+async function loadOwnedItems({ apply = true } = {}) {
+  if (!session) return;
+  try {
+    const res = await fetch('/api/public/locker', {
+      headers: { 'Authorization': 'bearer ' + session.token },
+    });
+    const data = await res.json();
+    ownedItems = new Set((data.items || []).map(id => {
+      const colon = id.indexOf(':');
+      return colon >= 0 ? id.slice(colon + 1) : id;
+    }));
+    if (apply) applyOwnedBadges();
+  } catch(e) {}
+}
+function applyOwnedBadges() {
+  document.querySelectorAll('.item-card').forEach(card => {
+    const imageId = card.dataset.imageid;
+    if (imageId && ownedItems.has(imageId)) {
+      card.classList.add('is-owned');
+    } else {
+      card.classList.remove('is-owned');
+    }
+  });
+}
+
+// --- Auth ---
+function resetLoginBtn() {
+  const btn = document.getElementById('login-btn');
+  if (!btn) return;
+  btn.disabled = false;
+  btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 71 55" fill="white"><path d="M60.1 4.9A58.6 58.6 0 0 0 45.5.4a41 41 0 0 0-1.8 3.7 54.2 54.2 0 0 0-16.3 0A38.2 38.2 0 0 0 25.6.4 58.4 58.4 0 0 0 11 5C1.6 19 -1 32.7.3 46.2a59 59 0 0 0 18 9.1 44.6 44.6 0 0 0 3.9-6.3 38.4 38.4 0 0 1-6.1-2.9l1.5-1.1a42 42 0 0 0 35.8 0l1.5 1.1a38.3 38.3 0 0 1-6.1 2.9 44.4 44.4 0 0 0 3.8 6.3 58.8 58.8 0 0 0 18-9.1C72 30.6 68.4 17 60.1 4.9ZM23.7 38a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 23.7 38Zm23.6 0a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 47.3 38Z"/></svg> Login with Discord`;
+}
+function stopPoll() {
+  if (pollInterval) { clearInterval(pollInterval); pollInterval = null; }
+}
+
+function doLogin() {
+  const state = crypto.randomUUID();
+  const btn = document.getElementById('login-btn');
+  btn.disabled = true;
+  btn.innerHTML = `<span style="opacity:0.7">Waiting...</span>`;
+
+  authPopup = window.open(
+    `/rmx/server/api/v1/discord/auth?state=${state}`,
+    'discord_auth',
+    'width=500,height=700,left=' + Math.round(screen.width/2 - 250) + ',top=' + Math.round(screen.height/2 - 350)
+  );
+
+  function onMessage(e) {
+    if (!e.data || e.data.type !== 'discord_auth') return;
+    window.removeEventListener('message', onMessage);
+    stopPoll();
+    handleAuthSuccess(e.data.token);
+  }
+  window.addEventListener('message', onMessage);
+
+  stopPoll();
+  pollInterval = setInterval(async () => {
+    try {
+      if (authPopup && authPopup.closed) {
+        stopPoll();
+        window.removeEventListener('message', onMessage);
+        resetLoginBtn();
+        return;
+      }
+      const res = await fetch(`/rmx/server/api/v1/discord/pending/${state}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.pending) return;
+      stopPoll();
+      window.removeEventListener('message', onMessage);
+      if (authPopup && !authPopup.closed) authPopup.close();
+      handleAuthSuccess(data.token);
+    } catch(e) {}
+  }, 2000);
+}
+
+async function handleAuthSuccess(token) {
+  try {
+    const payload = JSON.parse(atob(token.split('.')[1]));
+    session = { accountId: payload.sub, token, displayName: payload.dn };
+    await refreshVbucks();
+    saveSession(session);
+    updateHeaderLoggedIn();
+    await loadOwnedItems();
+  } catch(e) {
+    resetLoginBtn();
+  }
+}
+
+async function refreshVbucks() {
+  if (!session) return;
+  try {
+    const res = await fetch('/api/public/vbucks', {
+      headers: { 'Authorization': 'bearer ' + session.token },
+    });
+    const data = await res.json();
+    session.vbucks = data.vbucks ?? 0;
+  } catch { session.vbucks = 0; }
+}
+
+function updateHeaderLoggedIn() {
+  document.getElementById('header-right').innerHTML = `
+    <span class="user-name">${session.displayName}</span>
+    <div class="header-sep"></div>
+    <div id="user-vbucks">
+      <img src="${VBUCKS_ICON}" alt="V-Bucks">
+      <span>${(session.vbucks||0).toLocaleString()}</span>
+    </div>
+    <div class="header-sep"></div>
+    <button class="btn-header logout" onclick="doLogout()">Logout</button>`;
+}
+
+function doLogout() {
+  session = null;
+  ownedItems = new Set();
+  clearSession();
+  applyOwnedBadges();
+  document.getElementById('header-right').innerHTML = `<button class="btn-login" id="login-btn" onclick="doLogin()"><svg width="18" height="18" viewBox="0 0 71 55" fill="white"><path d="M60.1 4.9A58.6 58.6 0 0 0 45.5.4a41 41 0 0 0-1.8 3.7 54.2 54.2 0 0 0-16.3 0A38.2 38.2 0 0 0 25.6.4 58.4 58.4 0 0 0 11 5C1.6 19 -1 32.7.3 46.2a59 59 0 0 0 18 9.1 44.6 44.6 0 0 0 3.9-6.3 38.4 38.4 0 0 1-6.1-2.9l1.5-1.1a42 42 0 0 0 35.8 0l1.5 1.1a38.3 38.3 0 0 1-6.1 2.9 44.4 44.4 0 0 0 3.8 6.3 58.8 58.8 0 0 0 18-9.1C72 30.6 68.4 17 60.1 4.9ZM23.7 38a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 23.7 38Zm23.6 0a6.8 6.8 0 0 1-6.4-7.1 6.8 6.8 0 0 1 6.4-7.2 6.8 6.8 0 0 1 6.4 7.2A6.8 6.8 0 0 1 47.3 38Z"/></svg> Login with Discord</button>`;
+}
+
+// --- Buy ---
+async function onItemClick(el) {
+  if (!session) { doLogin(); return; }
+  const imageId = el.dataset.imageid;
+  const isOwned = imageId && ownedItems.has(imageId);
+  pendingItem = {
+    offerId: el.dataset.offer,
+    name: el.dataset.name,
+    type: el.dataset.type,
+    price: parseInt(el.dataset.price),
+    img: el.dataset.img,
+    imageId,
+    isOwned,
+  };
+  const color = TYPE_COLORS[pendingItem.type] || '#2c3e50';
+  document.querySelector('.buy-hero').style.background = `linear-gradient(160deg,${color}55,#0d0b1a)`;
+  document.getElementById('buy-img').src = pendingItem.img;
+  document.getElementById('buy-name').textContent = pendingItem.name;
+  document.getElementById('buy-type').textContent = pendingItem.type;
+  document.getElementById('buy-price').textContent = pendingItem.price.toLocaleString();
+  document.getElementById('buy-error').textContent = '';
+  const buyBtn = document.getElementById('buy-btn');
+  if (isOwned) {
+    buyBtn.disabled = true;
+    buyBtn.textContent = 'Already Owned';
+    buyBtn.style.background = 'rgba(255,255,255,0.06)';
+    buyBtn.style.boxShadow = 'none';
+  } else {
+    buyBtn.disabled = false;
+    buyBtn.textContent = 'Purchase';
+    buyBtn.style.background = '';
+    buyBtn.style.boxShadow = '';
+  }
+  document.getElementById('buy-modal').classList.add('open');
+  await refreshVbucks();
+  saveSession(session);
+  document.getElementById('buy-bal').textContent = (session.vbucks||0).toLocaleString();
+  updateHeaderLoggedIn();
+}
+function closeBuy() {
+  document.getElementById('buy-modal').classList.remove('open');
+  pendingItem = null;
+}
+
+async function doBuy() {
+  if (!pendingItem || !session) return;
+  const btn = document.getElementById('buy-btn');
+  btn.disabled = true;
+  btn.textContent = 'Purchasing...';
+  document.getElementById('buy-error').textContent = '';
+  try {
+    const res = await fetch(`/fortnite/api/game/v2/profile/${session.accountId}/client/PurchaseCatalogEntry?profileId=common_core`, {
+      method: 'POST',
+      headers: { 'Authorization': 'bearer ' + session.token, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ offerId: pendingItem.offerId, purchaseQuantity: 1, currency: 'MtxCurrency', currencySubType: '', expectedTotalPrice: pendingItem.price, gameContext: '' }),
+    });
+    const text = await res.text();
+    let data = {};
+    try { if (text) data = JSON.parse(text); } catch(_) {}
+    if (!res.ok) throw new Error(data.errorMessage || data.errorCode || `Error ${res.status}`);
+    await refreshVbucks();
+    await loadOwnedItems();
+    saveSession(session);
+    updateHeaderLoggedIn();
+    closeBuy();
+    showToast(`Purchased ${pendingItem.name}!`);
+  } catch(e) {
+    document.getElementById('buy-error').textContent = e.message;
+    btn.disabled = false;
+    btn.textContent = 'Purchase';
+  }
+}
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;padding:11px 22px;border-radius:8px;font-weight:600;z-index:200;font-size:0.85rem;box-shadow:0 4px 20px rgba(109,40,217,.4);';
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 3000);
+}
+
+// --- Init ---
+async function init() {
+  const saved = loadSession();
+  if (saved) {
+    session = saved;
+    await Promise.all([
+      loadShop(),
+      refreshVbucks().then(() => { saveSession(session); updateHeaderLoggedIn(); }),
+      loadOwnedItems({ apply: false }),
+    ]);
+    applyOwnedBadges();
+  } else {
+    loadShop();
+  }
+}
+init();
+</script>
+</body>
+</html>

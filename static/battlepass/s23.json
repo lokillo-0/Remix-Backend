@@ -1,0 +1,1766 @@
+{
+  "C7F3EB0449D0C04C9F684CADD68F4AD9": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "972BDEED421538EB32F4FF8E437A304C": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Sunlit.Spray_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7D9F382D41D5A6A490D34DA8CD49E30B": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Citadel.LoadingScreen_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "E058D27C4FD0435B88ACC98AF13928E8": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Gliders/Glider_Citadel.Glider_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "8C3AE09D47AD348C6B640F9AB38B2CC6": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Citadel.Spray_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "2C64D9674CDD1133079A8D913F40A543": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Pickaxes/Pickaxe_Citadel.Pickaxe_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "2D92A487464C11BDF472128E3509811C": {
+    "AssetPathName": "/Game/Athena/Items/ItemAccessTokens/IATID_037_Emote_Citadel.IATID_037_Emote_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_StyleB.VTID_Character_Citadel_StyleB",
+        "SubPathString": "",
+        "Quantity": 1
+      },
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_Helmet.VTID_Character_Citadel_Helmet",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "325B06764750052C26CCF6941830E180": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_Chainmail.Wrap_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7195C7144ADE6DDD1A2FE09BC1BB30C0": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Backpacks/Backpack_Sunlit.Backpack_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "AAA82B914CC265F6F0B63ABE0189C3AF": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_SuperLevelT2.VTID_Character_Citadel_SuperLevelT2",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "C16A143B45D4C06F128D8095938BB982": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_SuperLevelT1.VTID_Character_Sharpfang_SuperLevelT1",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "14F44C1141BE2095E2BEA193AA23353D": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sunlit_SuperLevelT1.VTID_Character_Sunlit_SuperLevelT1",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "CA1A14734C1F00C12AC483AB60D7C86F": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_SuperLevelT1.VTID_Character_Citadel_SuperLevelT1",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "93BC5DCE44B040FD4B8316AC174AEDC7": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_SuperLevelT1.VTID_Character_Venice_SuperLevelT1",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "094D1856486B6DC7D0835BBCED7EC4C9": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_SuperLevelT1.VTID_Character_Chainmail_SuperLevelT1",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "DAFF1ACA47167105AA9A20BF6AEFC2F9": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_S23BP_Lineup.LoadingScreen_S23BP_Lineup",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "302B7B2B4FC4B7ECB0124A9C15387A6A": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_SuperLevelT2.VTID_Character_Chainmail_SuperLevelT2",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "8942F5BD4A8CCE159A7301AC9ADA2F4C": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_SuperLevelT2.VTID_Character_Venice_SuperLevelT2",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "6D9A92874A83987D3F43FABC67201936": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_SuperLevelT2.VTID_Character_Sharpfang_SuperLevelT2",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "15A83A2047E5B7BEE33019947E2EC4B9": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sunlit_SuperLevelT2.VTID_Character_Sunlit_SuperLevelT2",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "EFFE70A14A921E616194CF90269EBDA6": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_SuperLevelT3.VTID_Character_Venice_SuperLevelT3",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "810145BC4E1A05D326D650B63BAE48BE": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_SuperLevelT3.VTID_Character_Chainmail_SuperLevelT3",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "FDAE1B6042E5E8E5D47F43A77A7495E4": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sunlit_SuperLevelT3.VTID_Character_Sunlit_SuperLevelT3",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "74840ADA4D7614C4D04F96B98FE3F5D1": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_SuperLevelT3.VTID_Character_Sharpfang_SuperLevelT3",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "5A0FA3FE45C514E461B2E488D9BC07C6": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_SuperLevelT3.VTID_Character_Citadel_SuperLevelT3",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T4"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "04DB45874A0E78C0A6E3D38F11B390CD": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "3DB9F7394C751ABE6778D2A3F0EA902C": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "2DF38FE24B4F4C6C6EDAF2BCF04FB1AB": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Venice_Style_B.VTID_Glider_Venice_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "9A19637944D98BF6CB0A69BEFED1DADD": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "7EA5F24A4AD37CDA5E20ACB085A35BB1": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_RedPepper_StyleA.VTID_Character_RedPepper_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "2553902445BBACED276E5C8D3C7B64A5": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "3C77E908480C5D5D2EEA458B9CE6A8A8": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "295571D641D7A3529B6B02BAFCF0449E": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Chainmail_Style_B.VTID_Glider_Chainmail_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "E3092F694A53F036AFD6DA8DD22E3B9B": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "E00638BE4DA3DAB5A7EA18B059F8CBD4": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "4B843BD446E23973A4FE8381BFEF53AD": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Apprentice_Forcefield.LoadingScreen_Apprentice_Forcefield",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "CD3F3645420D6BCC2F990B9DD5585154": {
+    "AssetPathName": "/Game/Items/BannerIcons/BRS23_Apprentice.BRS23_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "551BA23143C44B2DE41E4480808B5EBA": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Contrails/Contrail_Apprentice.Contrail_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Contrail_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7DA639764976307FE196B4AC92BA8AEC": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "6065A36F4091BF4FB021D5AD784DF382": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_ApprenticeSwirl.EID_ApprenticeSwirl",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "BDC0BEB747C11413F7736DBB81866370": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_Apprentice.Wrap_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "90C2C46047E2EBE5C845CCA982A690C2": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Apprentice_StyleC.VTID_Character_Apprentice_StyleC",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "5943D360405A998B931C97827C716295": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_SharpFang_Slash.LoadingScreen_SharpFang_Slash",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "355B45EB4052F79895A61DB9DE846C7D": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Sharpfang_StyleA.VTID_Backbling_Sharpfang_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7807CBA245CB8CA4E4F4F49C835A5204": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "454F51D24B90CD1B670B2397D1124C9E": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_SharpFang.Wrap_SharpFang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B65641CA4DAC8E3D7CDB3594495054D9": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Pickaxes/Pickaxe_SharpFang.Pickaxe_SharpFang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "AFBB87E94DC1942DA275BFAF752C6FAA": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_StyleA.VTID_Character_Sharpfang_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "13D0390A4824BEF2FD2E568538E358C6": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_SharpFang_Extra.LoadingScreen_SharpFang_Extra",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "F5B104874F3CFDD90065C0B8A0447778": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_Sharpfang.EID_Sharpfang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "50CCDE094E34DD75C813C3A470FFC6E5": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/Emoji/Emoji_S23_SharpFang.Emoji_S23_SharpFang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B7ED7E8F45E4C4BB0BA99E9C8B74528E": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "058A0B1048FC3A448A66CAAF0D705D83": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Sharpfang_StyleB.VTID_Backbling_Sharpfang_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "085FD38D42C4D32D5274FD8BC1F256EB": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Contrails/Contrail_SharpFang.Contrail_SharpFang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Contrail_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Contrail_SharpFang_StyleB.VTID_Contrail_SharpFang_StyleB",
+        "SubPathString": "",
+        "Quantity": 1
+      },
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Contrail_SharpFang_StyleC.VTID_Contrail_SharpFang_StyleC",
+        "SubPathString": "",
+        "Quantity": 1
+      },
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Contrail_SharpFang_StyleD.VTID_Contrail_SharpFang_StyleD",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "36DF67384C5A4600B86B3B973AF46EF0": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_StyleB.VTID_Character_Sharpfang_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "2D592E78405F6E7AA455B494DCE2A535": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Citadel_SwordRaise.LoadingScreen_Citadel_SwordRaise",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "0A485A78478CB66B2A5AC6B695BD71F6": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "9DAAB18149BEC3CA06E5189905A5B21C": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Backpacks/Backpack_Citadel.Backpack_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "552448C34BC21F552716A7B9F049C157": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_Citadel.Wrap_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7327DB404A3C4E594A6F5FB0193C76CC": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Citadel_StyleA.VTID_Character_Citadel_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/Cosmetics/Backpacks/Backpack_CitadelCape.Backpack_CitadelCape",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "AF0643DE423296D8EC498BA697DA8AAF": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_SharpFang_Sipping.Spray_SharpFang_Sipping",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "F59FD1ED4E91DC1E4616DEB216601246": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/Emoji/Emoji_S23_Citadel.Emoji_S23_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "443F2B2A4CC3335374A2BDB270891498": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/MusicPacks/MusicPack_161_Citadel.MusicPack_161_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Music_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "424157EC41A33100A5E552A836CB942E": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "ED35694A423008EF6D7318B12DE7D0B9": {
+    "AssetPathName": "/Game/Items/BannerIcons/BRS23_Citadel.BRS23_Citadel",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "338746F848117AB8A8C848BD54BD46FD": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/MusicPacks/MusicPack_160_Venice.MusicPack_160_Venice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Music_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B8C01A8C41E9F19E3F0445AF44436816": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "D97F44964FDA9D1B9D3AB59B67FBAE98": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sunlit_StyleA.VTID_Character_Sunlit_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Included"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "C8FF62D442BF9A78E10C7D9E3C299B0D": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Sunlit.LoadingScreen_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "449D02664F14866A439172A219FAD974": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Contrails/Contrail_Sunlit.Contrail_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Contrail_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "D49DBAF743F0E8BAFA198D89A506935F": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Gliders/Glider_Sunlit.Glider_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "813995B6451FF9C21FF5659DE031F82D": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_StyleA.VTID_Character_Chainmail_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "F166D7B4464D880387918EBDD8010EA4": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sunlit_StyleB.VTID_Character_Sunlit_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1AC6DE2147175BF130C77AA5C3D5B128": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_StyleB.VTID_Character_Chainmail_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "776B087D42E93D0007819CB20A2F775E": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_RedPepper_StyleC.VTID_Character_RedPepper_StyleC",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T3"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Items/BannerIcons/BRS23_RedPepper.BRS23_RedPepper",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "93B3BF204A03A8F859AA088334912ACC": {
+    "AssetPathName": "/Game/Items/Currency/MtxGiveaway.MtxGiveaway",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Vbucks_Sm"
+    },
+    "Quantity": 100,
+    "ChainedRewards": null
+  },
+  "C24F553240AFF27286CCF189917887A3": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Venice_Skateboard.LoadingScreen_Venice_Skateboard",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "069095F74697694A77E27786BF2571F3": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Venice_Skateboard.Spray_Venice_Skateboard",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "0FCBE16644A7E0942F0A1A96DCA2EF0B": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_S23KeyArt.LoadingScreen_S23KeyArt",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "2BE83C204D1AD9492617789525B36A1B": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_Venice.Wrap_Venice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "9811A31A4B10491372B7D8AABA07C1EB": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Venice_Style_A.VTID_Pickaxe_Venice_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7D14866A4D391205E52D2FBBBC2D8EF8": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_StyleA.VTID_Character_Venice_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_Glasses.VTID_Character_Venice_Glasses",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "24171D284DD9ECDC1C7DE28ABC864EE4": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Backpacks/Backpack_Apprentice.Backpack_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Apprentice_StyleB.VTID_Backbling_Apprentice_StyleB",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "D856A9674F3D5CA2D2C3F18F3FF49933": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/Emoji/Emoji_S23_Sunlit.Emoji_S23_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "D7B1588949896A0727F5A6884692EC21": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Venice.LoadingScreen_Venice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "974CDAC14AFBAC8F3A93C4910B48EC7E": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Venice_StyleB.VTID_Backbling_Venice_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1E1028D041EF6DB4BDB73C96D760A024": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/Emoji/Emoji_S23_Venice.Emoji_S23_Venice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1C93344E459C2771E460D4833F838DBE": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_Chainmail.EID_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "CC9DB67E422286ED5A2787B6AE8CD6B1": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_Venice.EID_Venice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "6CE5ACD34503997FE5EA0392C52FCB85": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Venice_StyleB.VTID_Character_Venice_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B4D2E10543199C8A899AE292ADC0F61E": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_Apprentice.EID_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "FD573AD04A9FCFB09B73F499BA814A3D": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/MusicPacks/MusicPack_159_Chainmail.MusicPack_159_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Music_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "6B0645B745B603CEB6229EB122956B25": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Venice_Bird.Spray_Venice_Bird",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "5650839D4BB9DCBECB94E88134FB6553": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Pickaxes/Pickaxe_Sunlit.Pickaxe_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "0123FBCC4AD045548BEF13A4068DBEE4": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_RedPepper.LoadingScreen_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "A61B692449F53B792025B5A30132BC16": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_RedPepper.Spray_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "A14001AE47ADBD1B990D6F9D38BF89F8": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Backpacks/Backpack_RedPepper.Backpack_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "F5F511E34A2CAC44EDF408844F3436B6": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_RedPepper.Wrap_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "7AC26B12495E30CCF515AD89DF873CF7": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Gliders/Glider_RedPepper.Glider_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "89DA8FBC403C668355A696925E2467FD": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Venice_Style_A.VTID_Glider_Venice_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "E8FC62324EAB90D6396298973FD93F34": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_RedPepper_StyleD.VTID_Character_RedPepper_StyleD",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B1C778C042617DF63C5BA7B92A3622B1": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Venice_Style_B.VTID_Pickaxe_Venice_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1F6CB7F6414B66D12DE331A40C43F21B": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_Sunlit.EID_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "208300ED412A29C7DDBA4C8B1653FC31": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Sharpfang_StyleC.VTID_Character_Sharpfang_StyleC",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T3"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Sharpfang_StyleC.VTID_Backbling_Sharpfang_StyleC",
+        "SubPathString": "",
+        "Quantity": 1
+      },
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Sharpfang_StyleD.VTID_Backbling_Sharpfang_StyleD",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "4BD98AA14100925241741F9337142A07": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Contrails/Contrail_RedPepper.Contrail_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Contrail_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "BA772F8E41B28026D05B27AA0DFFF949": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Pickaxes/Pickaxe_RedPepper.Pickaxe_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "8FBFD5114B0A527968DAC6B06A304BBE": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/Emoji/Emoji_S23_RedPepper.Emoji_S23_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emoticon_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "3E8F91D14E4FD4EC02098186998959DC": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Dances/EID_RedPepper.EID_RedPepper",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Emote_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "441A1A7D4794146D0819CBA42699BCE0": {
+    "AssetPathName": "/Game/Items/BannerIcons/BRS23_SharpFang.BRS23_SharpFang",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "B17560F9470A1365AA9DBA87CCA106C1": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/ItemWraps/Wrap_Sunlit.Wrap_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Wrap_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "D538C16541AA6F467B74CD8C25BAA937": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Chainmail.LoadingScreen_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "729F239146AEAE2F344B08BE30998A55": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Chainmail_Bat.Spray_Chainmail_Bat",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "84B4801A4E6635B0AD662C85AA4CB39A": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Chainmail_StyleA.VTID_Backbling_Chainmail_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "41349B4B4FDDCA0DBF9603893E086C46": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Chainmail_Style_A.VTID_Pickaxe_Chainmail_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "6BFD50234FE2B694D0D3C4BFDD88CAAA": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Chainmail_Style_A.VTID_Glider_Chainmail_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1358EE7840B775BB6EA7788E4D0AA0DA": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Apprentice_Style_B.VTID_Pickaxe_Apprentice_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1B7D71BB4D53D506816A2E9A5CCBD958": {
+    "AssetPathName": "/Game/Items/BannerIcons/BRS23_Sunlit.BRS23_Sunlit",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Sm"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "42AD1E9D4DD2D0DD2A7B16BC90B9E65B": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Chainmail_Bat.LoadingScreen_Chainmail_Bat",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "85A793ED49600E51B76657ADD1BAD1E3": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Chainmail_StyleB.VTID_Backbling_Chainmail_StyleB",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "FD2BAD2547C0CF5ED501E795CCDD1BE3": {
+    "AssetPathName": "/Game/Items/BannerIcons/BRS23_Chainmail.BRS23_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Banner_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "AF5F63A14079CDB609D0908F7D8FBA09": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Contrails/Contrail_Chainmail.Contrail_Chainmail",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Contrail_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "641304104B14423F726CEBBD53C83C93": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Chainmail_Style_B.VTID_Pickaxe_Chainmail_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "1C4C91324C1B25E05BA2638150562859": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Backbling_Venice_StyleA.VTID_Backbling_Venice_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BackBling_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "4DAD4BF344FFFEFED583C9BCCE58E575": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/LoadingScreens/LoadingScreen_Apprentice_Blue.LoadingScreen_Apprentice_Blue",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "LoadingScreen_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "DEFB6C364D26067823F43C974C5CD4A0": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Chainmail_StyleD.VTID_Character_Chainmail_StyleD",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "BonusReward_T3"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Chainmail_Mask.Spray_Chainmail_Mask",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "6F99B7E043634288EAB380B3E72D374D": {
+    "AssetPathName": "/Game/Athena/Items/Cosmetics/Sprays/Spray_Apprentice.Spray_Apprentice",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Spray_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "919CDA474B34E9D88BDB14AB7A49D07D": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Apprentice_Style_A.VTID_Glider_Apprentice_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "577A95304F692CAB09472B80A67755AC": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Pickaxe_Apprentice_Style_A.VTID_Pickaxe_Apprentice_Style_A",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "PickAxe_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  },
+  "C709445B41576932504EA4956416A575": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Apprentice_StyleA.VTID_Character_Apprentice_StyleA",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Outfit_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": [
+      {
+        "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Character_Apprentice_StyleB.VTID_Character_Apprentice_StyleB",
+        "SubPathString": "",
+        "Quantity": 1
+      }
+    ]
+  },
+  "8C94ADD24733B1EA8FFA8181E3277580": {
+    "AssetPathName": "/Game/Athena/Items/CosmeticVariantTokens/VTID_Glider_Apprentice_Style_B.VTID_Glider_Apprentice_Style_B",
+    "SubPathString": "",
+    "OfferPriceRowHandle": {
+      "DataTable": {
+        "ObjectName": "DataTable'S23_BattlePassOffer_Prices'",
+        "ObjectPath": "/BattlePassS23/DataTables/S23_BattlePassOffer_Prices.0"
+      },
+      "RowName": "Glider_Med"
+    },
+    "Quantity": 1,
+    "ChainedRewards": null
+  }
+}

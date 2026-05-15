@@ -1,0 +1,146 @@
+{
+  "rewards": [
+    {
+      "AthenaLoadingScreen:LoadingScreen_MissusMind_Suit": 1
+    },
+    {
+      "AthenaPickaxe:VTID_Pickaxe_MissusMind_StyleA": 1
+    },
+    {
+      "AthenaItemWrap:Wrap_MissusMind": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaDance:EID_MissusMind": 1
+    },
+    {
+      "AthenaSkyDiveContrail:Contrail_MissusMind": 1
+    },
+    {
+      "AthenaBackpack:VTID_Backbling_MissusMind_StyleA": 1
+    },
+    {
+      "AthenaCharacter:VTID_Character_MIssusMind_StyleA": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_MissusMind_SuitSnow": 1
+    },
+    {
+      "AthenaPickaxe:VTID_Pickaxe_MissusMind_StyleB": 1
+    },
+    {},
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaBackpack:VTID_Backbling_MissusMind_StyleB": 1
+    },
+    {
+      "AthenaGlider:VTID_Glider_MissusMind_StyleB": 1
+    },
+    {
+      "AthenaCharacter:VTID_Character_MissusMind_StyleB": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_StageCue_Chalk": 1
+    },
+    {
+      "AthenaPickaxe:Pickaxe_StageCue": 1
+    },
+    {
+      "AthenaItemWrap:Wrap_StageCue": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaDance:EID_StageCue": 1
+    },
+    {
+      "AthenaSkyDiveContrail:Contrail_StageCue": 1
+    },
+    {
+      "AthenaCharacter:VTID_Character_StageCue_StyleA": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_DenimEquip_Stock": 1
+    },
+    {},
+    {
+      "AthenaBackpack:VTID_Backbling_DenimEquip_StyleA": 1
+    },
+    {
+      "AthenaPickaxe:VTID_Pickaxe_DenimEquip_StyleA": 1
+    },
+    {
+      "AthenaItemWrap:Wrap_DenimEquip": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaCharacter:VTID_Character_DenimEquip_StyleA": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_DenimEquip_StockGlow": 1
+    },
+    {
+      "AthenaBackpack:VTID_Backbling_DenimEquip_StyleB": 1
+    },
+    {
+      "AthenaSkyDiveContrail:Contrail_DenimEquip": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaPickaxe:VTID_Pickaxe_DenimEquip_StyleB": 1
+    },
+    {
+      "AthenaDance:EID_DenimEquip": 1
+    },
+    {
+      "AthenaCharacter:VTID_Character_DenimEquip_StyleB": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_GoldCat_Claw": 1
+    },
+    {
+      "AthenaPickaxe:VTID_Pickaxe_GoldCat_StyleA": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaItemWrap:Wrap_GoldCat": 1
+    },
+    {},
+    {
+      "AthenaBackpack:VTID_Backbling_GoldCat_StyleA": 1
+    },
+    {
+      "AthenaCharacter:VTID_Character_GoldCat_StyleA": 1
+    },
+    {
+      "AthenaLoadingScreen:LoadingScreen_GoldCat_ClawTux": 1
+    },
+    {
+      "AthenaDance:EID_GoldCat": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {},
+    {
+      "AthenaGlider:VTID_Glider_GoldCat_StyleA": 1
+    },
+    {
+      "Currency:MtxGiveaway": 100
+    },
+    {
+      "AthenaCharacter:VTID_Character_GoldCat_StyleB": 1
+    }
+  ]
+}

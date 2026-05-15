@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  xenon:
+    image: ubuntu:latest
+    container_name: xenon-app
+    restart: unless-stopped
+    working_dir: /app
+    network_mode: host
+    volumes:
+      - .:/app
+    command: sh -c "apt-get update && apt-get install -y bash ca-certificates && update-ca-certificates && chmod +x docker-entrypoint.sh && ./docker-entrypoint.sh"

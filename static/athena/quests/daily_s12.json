@@ -1,0 +1,182 @@
+{
+  "quest_s12_daily_damage_shotgun": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Shotgun": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_harvest_wood": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Harvest_Wood": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_survivestormphases": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_SurviveStormPhases": 0
+    },
+    "Count": 10
+  },
+  "quest_s12_daily_harvest_metal": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Harvest_Metal": 0
+    },
+    "Count": 600
+  },
+  "quest_s12_daily_harvest_brick": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Harvest_Brick": 0
+    },
+    "Count": 800
+  },
+  "quest_s12_daily_elim_sniper": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim_Sniper": 0
+    },
+    "Count": 1
+  },
+  "quest_s12_daily_elim_smg": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim_SMG": 0
+    },
+    "Count": 3
+  },
+  "quest_s12_daily_elim_shotgun": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim_Shotgun": 0
+    },
+    "Count": 3
+  },
+  "quest_s12_daily_elim_pistol": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim_Pistol": 0
+    },
+    "Count": 2
+  },
+  "quest_s12_daily_elim_assault": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim_Assault": 0
+    },
+    "Count": 3
+  },
+  "quest_s12_daily_elim": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Elim": 0
+    },
+    "Count": 5
+  },
+  "quest_s12_daily_damage_sniper": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Sniper": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_damage_smg": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_SMG": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_damage_scoped": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Scoped": 0
+    },
+    "Count": 300
+  },
+  "quest_s12_daily_damage_pistol": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Pistol": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_damage_pickaxe": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Pickaxe": 0
+    },
+    "Count": 100
+  },
+  "quest_s12_daily_damage_assault": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage_Assault": 0
+    },
+    "Count": 1000
+  },
+  "quest_s12_daily_damage": {
+    "Rewards": {
+      "Token:athena_dailychallenge_token": 1,
+      "AccountResource:athenaseasonalxp": 31000
+    },
+    "Objectives": {
+      "Quest_S12_Daily_Damage": 0
+    },
+    "Count": 2000
+  }
+}

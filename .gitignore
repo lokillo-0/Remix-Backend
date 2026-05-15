@@ -1,0 +1,7 @@
+*.db
+*db.lock
+xenon
+*.env
+bot/
+*.log
+*.exe

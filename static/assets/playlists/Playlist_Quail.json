@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "revision": 1,
+        "headRevision": 1,
+        "revisedAt": "2024-11-01T00:00:00.000Z",
+        "promotion": 0,
+        "promotedAt": "2024-11-01T00:00:00.000Z"
+    },
+    "assetData": {
+        "bOwnerFilterDestructedBuildingsInGrid": false,
+        "bDisplayRespawnWidget": false,
+        "LootLevel": "1",
+        "bRequireCrossplayEnabled": true,
+        "ForceKickAfterDeathMode": "Disabled",
+        "bRequirePickaxeInStartingInventory": true,
+        "bRewardsAllowXPProgression": true,
+        "bVehiclesDestroyAllBuildingSMActorsOnContact": false,
+        "EndOfMatchXpFirstElim": "50",
+        "bEnableSpawningStartup": true,
+        "PlaylistName": "Playlist_Quail",
+        "bLimitedTimeMode": false,
+        "UIDisplaySubName": {
+            "Category": "Game",
+            "NativeCulture": "",
+            "Namespace": "",
+            "LocalizedStrings": [],
+            "bIsMinimalPatch": false,
+            "NativeString": "",
+            "Key": ""
+        },
+        "MinPlayers": "20",
+        "GameData": "/Game/Athena/Playlists/AthenaCompositeGameData.AthenaCompositeGameData",
+        "bEnableCreativeMode": false,
+        "MaxHumanAndBotParticipants": "100",
+        "MaxPlayers": "100",
+        "bIsDefaultPlaylist": false,
+        "UIDescription": {
+            "Category": "Game",
+            "NativeCulture": "",
+            "Namespace": "",
+            "LocalizedStrings": [],
+            "bIsMinimalPatch": false,
+            "NativeString": "Remix: The Finale",
+            "Key": ""
+        },
+        "RatingType": "fun",
+        "CustomGameChannel": "Squad",
+        "MaxTeamSize": "1",
+        "FriendlyFireType": "Off",
+        "MaxSquads": "-1",
+        "bIsTournament": false,
+        "RewardsPlacementThreshold": "3",
+        "GameType": "BR",
+        "WinConditionPlayersRemaining": "1",
+        "MaxSocialPartySize": "1",
+        "MaxSquadSize": "1",
+        "bAllowSquadFillOption": true,
+        "EndOfMatchXpMultiplier": "20",
+        "bIsLargeTeamGame": false,
+        "MaxTeamCount": "100",
+        "bIsRankedMode": false,
+        "UIDisplayName": {
+            "Category": "Game",
+            "NativeCulture": "",
+            "Namespace": "",
+            "LocalizedStrings": [],
+            "bIsMinimalPatch": false,
+            "NativeString": "Remix: The Finale",
+            "Key": ""
+        },
+        "PlaylistId": "2",
+        "primaryAssetId": "FortPlaylistAthena:Playlist_Quail",
+        "GameplayTagContainer": {
+            "GameplayTags": [
+                {
+                    "TagName": "Athena.Playlist.DefaultXP"
+                },
+                {
+                    "TagName": "Athena.Playlist.Core"
+                },
+                {
+                    "TagName": "Athena.Playlist.Solo"
+                }
+            ]
+        }
+    }
+}

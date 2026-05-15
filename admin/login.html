@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: radial-gradient(circle at 30% 0%, #151125 0%, #08080C 60%, #050508 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: #0E0E14;
+            border: 1px solid #1C1C26;
+            border-radius: 12px;
+            padding: 3rem;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-logo {
+            margin-bottom: 1.5rem;
+            width: 80px;
+            height: auto;
+        }
+
+        .login-box h2 {
+            color: #FFFFFF;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            background-color: #1A1A24;
+            border: 1px solid #282836;
+            border-radius: 6px;
+            padding: 0.9rem 1rem;
+            color: #E2E2E2;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #4A4A6A;
+        }
+
+        .input-group input::placeholder {
+            color: #707080;
+            font-weight: 500;
+        }
+
+        .login-actions {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0 1.5rem 0;
+            font-size: 0.8rem;
+            color: #A0A0B0;
+        }
+
+        .login-actions a {
+            color: #A0A0B0;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .login-actions a:hover {
+            color: #FFFFFF;
+        }
+
+        .btn-continue {
+            width: 100%;
+            background-color: #232135;
+            color: #908F9F;
+            border: 1px solid #2C2A40;
+            padding: 0.9rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-continue:hover {
+            background-color: #2E2B45;
+            color: #E0E0E0;
+            border-color: #383556;
+        }
+
+        .error-message {
+            color: #EF4444;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <img src="logo.png" alt="Remix" class="login-logo">
+        <h2>Sign in</h2>
+        
+        <form id="login-form" style="width: 100%;">
+            <div class="input-group">
+                <input type="password" id="admin-key" placeholder="Admin Key" required autocomplete="off">
+            </div>
+
+            <div class="login-actions">
+                <span>Secure Admin Portal</span>
+                <a href="#">Forgot Key?</a>
+            </div>
+
+            <button type="submit" class="btn-continue">Continue</button>
+            <div id="login-error" class="error-message">Invalid key or connection failed.</div>
+        </form>
+    </div>
+
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+            window.history.replaceState(null, '', window.location.pathname.replace(/\.html$/, ''));
+        }
+
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const key = document.getElementById('admin-key').value;
+            const errorDiv = document.getElementById('login-error');
+            
+            try {
+                const response = await fetch('https://remixogfn.dev/rmx/server/api/v1/admin/grant/login_test/login_test', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': key
+                    }
+                });
+                
+                if (response.status === 401) {
+                    throw new Error('Invalid Admin Key');
+                }
+                
+                localStorage.setItem('adminKey', key);
+                window.location.href = 'index.html';
+                
+            } catch (err) {
+                errorDiv.style.display = 'block';
+                errorDiv.textContent = 'Invalid key or network error.';
+            }
+        });
+    </script>
+</body>
+</html>
